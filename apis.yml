@@ -1,8 +1,30 @@
 aid: bright
 name: Bright
-description: Bright is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Bright is Mexico's leading residential and commercial solar energy provider,
+  founded in 2014 (Y Combinator W15) by Jonah Greenberger. Often described as
+  "Sunrun for the developing world," Bright combines financing and software to
+  let homeowners and businesses adopt rooftop solar and battery energy storage
+  (BESS) at no upfront cost. The company operates a marketplace connecting a
+  network of local installers, distributors, and retail promoters with customers,
+  and offers financing models such as solar PPAs and leasing schemes. Bright's
+  public web presence is a Wix-hosted marketing site (thinkbright.mx) covering
+  its industrial, commercial, and home solutions, success cases, and 24/7 energy
+  monitoring technology. It exposes an agent-facing surface via an llms.txt and a
+  hosted Wix Site MCP endpoint, but publishes no first-party developer/REST API.
 url: https://raw.githubusercontent.com/api-evangelist/bright/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://static.wixstatic.com/media/248b1d_f91dfc1bc971452080cea17e73bcc327~mv2.png/v1/fill/w_2500,h_2500,al_c/248b1d_f91dfc1bc971452080cea17e73bcc327~mv2.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,12 +33,45 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Solar Energy
+- Renewable Energy
+- Energy Storage
+- FinTech
+- Climate
+- Mexico
+- Y Combinator
 apis: []
+common:
+- type: Website
+  url: https://www.thinkbright.mx/
+- type: About
+  url: https://www.thinkbright.mx/sobrenosotros
+- type: Support
+  url: https://www.thinkbright.mx/contacto
+- type: PrivacyPolicy
+  url: https://www.thinkbright.mx/aviso-privacidad
+- type: LinkedIn
+  url: https://www.linkedin.com/company/bright-mexico/
+- type: Facebook
+  url: https://www.facebook.com/joinbright/
+- type: Instagram
+  url: https://www.instagram.com/joinbright/
+- type: LLMsTxt
+  url: llms/bright-llms.txt
+- type: MCPServer
+  url: mcp/bright-mcp.yml
+- type: DomainSecurity
+  url: security/bright-domain-security.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

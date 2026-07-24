@@ -1,0 +1,20 @@
+generated: '2026-07-18'
+method: searched
+host: https://www.thinkbright.mx
+notes: >-
+  Probed the standard /.well-known/ discovery surface on the primary host. Bright
+  runs a Wix-hosted marketing site with no first-party API, so no well-known
+  documents are published; the site's agent surface is instead advertised via
+  /llms.txt (see llms/bright-llms.txt) and a hosted Wix Site MCP endpoint (see
+  mcp/bright-mcp.yml). Absence of these documents is valid, expected data.
+documents:
+- path: /.well-known/security.txt
+  status: 400
+- path: /.well-known/openid-configuration
+  status: 400
+- path: /.well-known/oauth-authorization-server
+  status: 400
+- path: /.well-known/api-catalog
+  status: 400
+- path: /.well-known/ai-plugin.json
+  status: 400
