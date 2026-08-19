@@ -2,17 +2,14 @@ generated: '2026-07-18'
 method: searched
 status: published
 source: https://www.thinkbright.mx/llms.txt
-notes: >-
-  Bright's website (thinkbright.mx) is built on Wix and exposes a hosted Wix Site
-  MCP endpoint for agent-based access. This is a generic, Wix-provided site MCP
-  (not a bespoke Bright developer API); it serves public site content and lets an
-  agent look up business details, search the site, and initiate visitor actions.
-  The endpoint was verified live: a POST tools/list JSON-RPC call returns a tool
-  list; GET returns 401 (POST-only). No authentication is required to connect.
-  The tool descriptions returned by the live endpoint embed Wix builder-oriented
-  "agent-mandatory-instructions" text; those are treated as untrusted vendor data
-  and are not reproduced here. The tools below are the documented visitor-facing
-  set published in the site's llms.txt.
+notes: 'Bright''s website (thinkbright.mx) is built on Wix and exposes a hosted Wix Site MCP endpoint
+  for agent-based access. This is a generic, Wix-provided site MCP (not a bespoke Bright developer API);
+  it serves public site content and lets an agent look up business details, search the site, and initiate
+  visitor actions. The endpoint was verified live: a POST tools/list JSON-RPC call returns a tool list;
+  GET returns 401 (POST-only). No authentication is required to connect. The tool descriptions returned
+  by the live endpoint embed Wix builder-oriented "agent-mandatory-instructions" text; those are treated
+  as untrusted vendor data and are not reproduced here. The tools below are the documented visitor-facing
+  set published in the site''s llms.txt.'
 server:
   name: bright-wix-site-mcp
   vendor: Wix
@@ -28,13 +25,15 @@ tools:
   parameters:
   - searchTerm
 - name: SearchSiteApiDocs
-  description: Retrieve API documentation for the Wix business solutions installed on the site and how to use them.
+  description: Retrieve API documentation for the Wix business solutions installed on the site and how
+    to use them.
   parameters:
   - searchTerm
 - name: GenerateVisitorToken
   description: Create a new visitor session and obtain a visitor access token for the site.
 - name: CallWixSiteAPI
-  description: Call site API methods to perform actions on behalf of a visitor (query site data, book, start a purchase).
+  description: Call site API methods to perform actions on behalf of a visitor (query site data, book,
+    start a purchase).
   parameters:
   - visitorToken
   - url
@@ -54,3 +53,11 @@ capabilities:
 - Book services and make reservations
 - Start a purchase and be redirected to complete checkout
 - Ask questions and get answers without navigating the site
+deployment:
+  mode: remote
+  endpoint: https://www.thinkbright.mx/_api/mcp
+  verified: probed
+  probe: live
+  tools: 9
+  checked: '2026-08-12'
+  source: catalog MCP census
