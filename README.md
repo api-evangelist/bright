@@ -64,6 +64,87 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Bright is a company surfaced as a portfolio company of y-combinator and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Bright is Mexico's leading residential and commercial solar energy provider, founded in 2014 (Y Combinator W15) by Jonah Greenberger. Often described as "Sunrun for the developing world," Bright combines financing and software to let homeowners and businesses adopt rooftop solar and battery energy storage (BESS) at no upfront cost. The company operates a marketplace connecting a network of local installers, distributors, and retail promoters with customers, and offers financing models such as solar PPAs and leasing schemes. Bright's public web presence is a Wix-hosted marketing site (thinkbright.mx) covering its industrial, commercial, and home solutions, success cases, and 24/7 energy monitoring technology. It exposes an agent-facing surface via an llms.txt and a hosted Wix Site MCP endpoint, but publishes no first-party developer/REST API.
 
-Backed by: y-combinator
+**Areas:** Company · Solar Energy · Renewable Energy · Energy Storage · Fintech · Climate · Mexico · Y Combinator
+
+## Bright on APIs.io
+
+Everything profiled for Bright is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/bright/](https://apis.io/providers/bright/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [bright-wix-site-mcp](https://apis.io/servers/bright/bright-wix-site-mcp/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Bright Domain Security](https://apis.io/security/bright/bright-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.thinkbright.mx/)
+- [Support](https://www.thinkbright.mx/contacto)
+- [Privacy policy](https://www.thinkbright.mx/aviso-privacidad)
+
+## API Evangelist rating
+
+**Kin Score 8.1** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 58.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 10.5 |
+
+**Agent readiness 2.2** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | platform (partial credit) |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 8.2** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/bright/](https://apis.io/providers/bright/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Bright: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/bright/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
